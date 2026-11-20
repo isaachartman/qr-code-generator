@@ -1,7 +1,10 @@
 /* K.O. II-inspired: warm grey body, off-white panel, black keys, orange accent, dark LCD */
 :root {
-  --body: #e9eaea;
-  --body-edge: #a3a29c;
+  --body: #727272;
+  --body-edge: #5c5c5c;
+  --on-body: #ffffff;
+  --on-body-soft: #efefef;
+  --err-on-body: #ffd2c2;
   --panel: #e6e4de;
   --ink: #161616;
   --ink-soft: #55544f;
@@ -69,8 +72,8 @@ canvas { display: block; width: 208px; height: 208px; image-rendering: pixelated
 
 /* controls on the grey body */
 .controls { padding: 12px 14px 14px; }
-.row-label { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 10px; color: var(--ink-soft); }
-.row-label #sizeReadout { color: var(--ink); font-family: var(--mono); }
+.row-label { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 10px; color: var(--on-body-soft); }
+.row-label #sizeReadout { color: var(--on-body); font-family: var(--mono); }
 .sizes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; }
 .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
 
