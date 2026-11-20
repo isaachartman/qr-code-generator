@@ -28,6 +28,10 @@ The extension isn't on the Chrome Web Store, so load it unpacked:
 - The QR code is always drawn black on white with a 4-module quiet zone and error correction level M, so it scans reliably.
 - Very long text won't fit in a QR code; the popup says so instead of drawing one.
 
+## License
+
+[MIT](LICENSE)
+
 ## Credits
 
 QR encoding by [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) by Kazuhiko Arase (MIT), bundled as `qrcode.js`.
