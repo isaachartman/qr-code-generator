@@ -5,7 +5,7 @@ const statusEl = document.getElementById('status');
 const copyBtn = document.getElementById('copy');
 const downloadBtn = document.getElementById('download');
 
-const SIZE = 240;   // canvas pixels
+const SIZE = 208;   // canvas pixels
 const QUIET = 4;    // quiet-zone modules (QR spec minimum)
 const sizeKeys = [...document.querySelectorAll('#size .sz')];
 const sizeReadout = document.getElementById('sizeReadout');

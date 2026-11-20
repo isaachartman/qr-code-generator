@@ -39,12 +39,12 @@ body {
 /* off-white label panel */
 .panel {
   position: relative; display: grid; grid-template-columns: 1fr 96px; gap: 0 12px;
-  padding: 14px 14px 10px; background: var(--panel);
+  padding: 14px 14px 8px; background: var(--panel);
 }
 .brand h1 { margin: 0; font-size: 26px; font-weight: 300; letter-spacing: .02em; line-height: 1; }
 .brand h1 span { font-size: 22px; margin-left: 4px; }
 .grille {
-  height: 56px; border-radius: 2px; background-color: #a7a6a1;
+  height: 40px; border-radius: 2px; background-color: #a7a6a1;
   background-image: radial-gradient(circle, #1f1f1f 2.2px, transparent 2.8px);
   background-size: 9px 9px; box-shadow: inset 0 0 0 2px #b9b8b3;
 }
@@ -52,8 +52,8 @@ body {
   grid-column: 1 / -1; margin-top: 12px; padding: 8px; background: #fff; border-radius: 2px;
   display: flex; justify-content: center; box-shadow: inset 0 0 0 1px #cfcdc7;
 }
-canvas { display: block; width: 240px; height: 240px; image-rendering: pixelated; }
-.spec { grid-column: 1 / -1; margin: 10px 0 0; font-size: 10px; font-weight: 500; }
+canvas { display: block; width: 208px; height: 208px; image-rendering: pixelated; }
+.spec { grid-column: 1 / -1; margin: 8px 0 0; font-size: 10px; font-weight: 500; }
 
 /* black LCD band */
 .lcd { padding: 12px 14px 10px; background: var(--lcd); color: var(--lcd-fg); }
@@ -64,15 +64,15 @@ canvas { display: block; width: 240px; height: 240px; image-rendering: pixelated
 }
 .lcd input:focus { outline: 0; border-bottom-color: var(--orange); }
 .lcd input::selection { background: var(--orange); color: #fff; }
-.status, .error { min-height: 14px; margin: 6px 0 0; font-size: 10px; color: var(--orange); }
+.status, .error { min-height: 12px; margin: 4px 0 0; font-size: 10px; color: var(--orange); }
 .error { color: var(--orange); }
 
 /* controls on the grey body */
-.controls { padding: 14px; }
+.controls { padding: 12px 14px 14px; }
 .row-label { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 10px; color: var(--ink-soft); }
 .row-label #sizeReadout { color: var(--ink); font-family: var(--mono); }
 .sizes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; }
-.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
 
 .key {
   position: relative; padding: 11px 4px 9px; border: 0; border-radius: 4px; cursor: pointer;
