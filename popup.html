@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="device">
+    <div class="ports" aria-hidden="true">
+      <span class="port">Output</span>
+      <span class="port hot">Input</span>
+      <i class="nub"></i>
+    </div>
+
+    <section class="panel">
+      <div class="brand">
+        <h1>Q.R.<span>II</span></h1>
+        <p class="jp">キューアール</p>
+      </div>
+      <div class="grille" aria-hidden="true"></div>
+      <div class="qr-wrap"><canvas id="qr" width="240" height="240" aria-label="QR code"></canvas></div>
+      <p class="spec">PNG QR code generator</p>
+    </section>
+
+    <section class="lcd">
+      <label for="url">URL / text</label>
+      <input id="url" type="text" spellcheck="false" autocomplete="off">
+      <p id="error" class="error" hidden></p>
+      <p id="status" class="status" role="status"></p>
+    </section>
+
+    <section class="controls">
+      <div class="row-label"><span>Image size</span><span id="sizeReadout">800 px</span></div>
+      <div class="sizes" id="size" role="radiogroup" aria-label="Image size">
+        <button type="button" class="key sz" role="radio" aria-checked="false" data-size="256">256</button>
+        <button type="button" class="key sz" role="radio" aria-checked="false" data-size="512">512</button>
+        <button type="button" class="key sz" role="radio" aria-checked="true" data-size="800">800</button>
+        <button type="button" class="key sz" role="radio" aria-checked="false" data-size="1024">1024</button>
+        <button type="button" class="key sz" role="radio" aria-checked="false" data-size="2048">2048</button>
+      </div>
+      <div class="actions">
+        <button id="copy" type="button" class="key hot">Copy</button>
+        <button id="download" type="button" class="key grey">Download</button>
+      </div>
+    </section>
+  </main>
+  <script src="qrcode.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
